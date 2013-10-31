@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="d3/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/local_style.css"/>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/getObjects.js"></script>
+ 
+  </head>
+  <body>
+    <form id="collection_PID_form" action='javascript:' onsubmit='getObjects()'>
+      <span>Enter PID of collection to retrieve objects</span></br>
+        <input id='collection_PID' type='text' size='20' value="wayne:collectionRENCEN" />                    
+        <button type="submit" >search</button> 
+    </form>
+    
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.js"></script>
+    <script type="text/javascript" src="js/force_graph.js"></script>
+    <script type="text/javascript">
+      //global variables;
+      globe_vars = new Object();
+      globe_vars.jsonObject = null;
+    </script>
+  </body>
+</html>
